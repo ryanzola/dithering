@@ -38,6 +38,9 @@ The app uses an **8×8 Bayer matrix** as a threshold map. Each pixel’s brightn
 
 As intensity rises, thresholds are crossed in this order, giving smooth gradients from just two colors.
 
+Here is a codepen demo that I made that illustrates the basic concept:  
+<https://codepen.io/ryanzola/pen/vENqRxx>
+
 ---
 
 ## 🚀 Getting Started
