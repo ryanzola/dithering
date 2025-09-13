@@ -103,8 +103,8 @@ function renderDitherTwoColor(ts = 0) {
 
   // 4) effect parameters (tiny, tasteful defaults)
   // shimmer: slide Bayer mask tile indices
-  const ox = ((Math.floor(tsec * 2) % 8) + 8) % 8;  // 2 px/sec
-  const oy = ((Math.floor(tsec * 3) % 8) + 8) % 8;  // 3 px/sec
+  const ox = ((Math.floor(tsec * 16) % 8) + 8) % 8;  // 16 px/sec
+  const oy = ((Math.floor(tsec * 24) % 8) + 8) % 8;  // 24 px/sec
 
   // breathe: small angle + contrast sway
   const ang2 = mode === 'breathe' ? (angBase + 5 * Math.sin(tsec * 0.5)) : angBase;
@@ -114,7 +114,6 @@ function renderDitherTwoColor(ts = 0) {
   const jitterAmp = mode === 'flicker' ? 0.02 : 0; // 0.02 => ±1% shift around mid
   const jitterPhase = Math.sin(tsec * 3);          // gentle temporal oscillation
 
-  // 5) render
   const img = ctx.createImageData(w, h);
   const d = img.data;
 
