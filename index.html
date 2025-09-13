@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dither Study</title>
+</head>
+
+<body>
+  <header>
+    <label>Color A <input type="color" id="cA" value="#262B36"></label>
+    <label>Color B <input type="color" id="cB" value="#83E1C8"></label>
+    <label>Scale <input type="number" id="scale" value="4" min="1" max="16"></label>
+    <label>Angle°
+      <input type="number" id="angle" value="75" step="15">
+    </label>
+    <label>Contrast
+      <input type="range" id="contrast" min="0.5" max="2.0" step="0.05" value="1.7">
+    </label>
+<label>
+  Anim
+  <select id="anim">
+    <option value="off">off</option>
+    <option value="shimmer">shimmer</option>
+    <option value="breathe" selected>breathe</option>
+    <option value="flicker">flicker</option>
+  </select>
+</label>
+<label>
+  <input id="pause" type="checkbox"> Pause
+</label>
+  </header>
+
+  <div class="wrapper">
+    <canvas id="cv"></canvas>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

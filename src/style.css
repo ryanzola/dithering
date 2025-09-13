@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  overscroll-behavior: none;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font: 14px/1.4 system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.5rem;
+  z-index: 1;
+  background: rgba(0 0 0 / 0.8);
+}
+button {
+  font: inherit;
+  padding: 0.25em 0.5em;
+  border: 1px solid;
+  border-radius: 0.25em;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+label {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.wrapper {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+canvas {
+  width: 100vw;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}
