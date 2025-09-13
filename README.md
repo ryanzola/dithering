@@ -40,7 +40,7 @@ As intensity rises, thresholds are crossed in this order, giving smooth gradient
 
 Here is a codepen demo that I made that illustrates the basic concept:  
 
-<a href="https://codepen.io/ryanzola/pen/vENqRxx" target="_blank">https://codepen.io/ryanzola/pen/vENqRxx</a>
+[https://codepen.io/ryanzola/pen/vENqRxx](https://codepen.io/ryanzola/pen/vENqRxx)
 
 ---
 
